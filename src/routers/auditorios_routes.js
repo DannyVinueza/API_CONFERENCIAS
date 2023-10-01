@@ -8,10 +8,10 @@ import { listarAuditorios,
 
 const router = Router();
 
-router.get('/auditorios', listarAuditorios)
-router.post('/auditorio/registrar', registrarAuditorio)
-router.put('/auditorio/actualizar/:id', actualizarAuditorio)
-router.delete('/auditorio/eliminar/:id', eliminarAuditorio)
+router.get('/auditorios', verAutenticacion, listarAuditorios)
+router.post('/auditorio/registrar', verAutenticacion, registrarAuditorio)
+router.put('/auditorio/actualizar/:id', verAutenticacion, actualizarAuditorio)
+router.delete('/auditorio/eliminar/:id', verAutenticacion, eliminarAuditorio)
 
 
 export default router;

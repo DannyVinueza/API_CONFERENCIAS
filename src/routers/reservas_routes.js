@@ -8,9 +8,9 @@ import { listarReservas,
 
 const router = Router();
 
-router.get('/reservas', listarReservas)
-router.post('/reserva/registrar', registrarReserva)
-router.put('/reserva/actualizar/:id', actualizarReserva)
-router.delete('/reserva/eliminar/:id', eliminarReserva)
+router.get('/reservas', verAutenticacion, listarReservas)
+router.post('/reserva/registrar', verAutenticacion, registrarReserva)
+router.put('/reserva/actualizar/:id', verAutenticacion, actualizarReserva)
+router.delete('/reserva/eliminar/:id', verAutenticacion, eliminarReserva)
 
 export default router;

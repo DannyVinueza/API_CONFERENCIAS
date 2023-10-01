@@ -9,9 +9,9 @@ import {
 
 const router = Router();
 
-router.get('/conferencistas', listarConferencistas)
-router.post('/conferencista/registrar', registrarConferencista)
-router.put('/conferencista/actualizar/:id',actualizarConferencista)
-router.delete('/conferencista/eliminar/:id', eliminarConferencista)
+router.get('/conferencistas',verAutenticacion, listarConferencistas)
+router.post('/conferencista/registrar',verAutenticacion, registrarConferencista)
+router.put('/conferencista/actualizar/:id',verAutenticacion, actualizarConferencista)
+router.delete('/conferencista/eliminar/:id',verAutenticacion, eliminarConferencista)
 
 export default router;
