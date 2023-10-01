@@ -1,0 +1,20 @@
+{
+    "id":1,
+    "name":"music"
+},
+{
+    "id":2,
+    "name":"movies"
+},
+{
+    "id":3,
+    "name":"series"
+},
+{
+    "id":4,
+    "name":"movies1"
+},
+{
+    "id":5,
+    "name":"movies2"
+}
